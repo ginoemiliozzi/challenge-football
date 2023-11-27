@@ -1,0 +1,12 @@
+services:
+  postgresql:
+    restart: always
+    container_name: 'database'
+    image: postgres:12.0-alpine
+    ports:
+      - '5432:5432'
+    environment:
+      - DEBUG=false
+      - POSTGRES_DB=football
+    volumes:
+      - ./resources/initial_schema.sql:/docker-entrypoint-initdb.d/init.sql
