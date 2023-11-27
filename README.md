@@ -53,7 +53,6 @@ If a query parameter `name` is used, it will also filter players by name using c
 
 - Node.js
 - npm
-- nodemon
 - docker compose
 
 #### Steps
